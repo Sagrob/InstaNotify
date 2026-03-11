@@ -1,10 +1,10 @@
-#Não me responsabilizo pelo uso indeviso dessa aplicação
+#Não me responsabilizo pelo uso indevido dessa aplicação
 #Projeto puramente feito para estudo
 
-#É aconselhável o minimo de conhecimento de sql para o uso desse arquivo
+#É aconselhável o minimo de conhecimento de sql e python para o uso desse arquivo
 
 #instale um ambiente virtual, e dentro dele instale o playwright, e o pyodbc
-#Junto com isso tenha um banco de dados já pronto, ou faça um
+#Junto com isso tenha um banco de dados já pronto, ou faça um.
 
 #É aconselhável que as colunas no banco de dados sejam:
 #id_horario(int), nome(varchar), horaOnline(time), diaOnline(date), vezes(int)
@@ -99,4 +99,5 @@ def run(playwright: Playwright) -> None:
 
 
 with sync_playwright() as playwright:
+
     run(playwright)
